@@ -13,7 +13,6 @@ setInterval(getSigmaCounter, 2500);
 
 async function increaseSigmaCounter() {
     if (!cooldown) {
-        increaseCounter();
         let audio = document.getElementById("sigmaSound");
         audio.currentTime = 0;
         audio.play();
