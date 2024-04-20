@@ -5,7 +5,8 @@ let cooldown = false;
 async function getSigmaCounter() {
   const response = await fetch("https://api.down-syndro.me:42069/api/count");
   const text = await response.text();
-  console.log(text);
+  document.getElementById("count").textContent = text;
+
   
 }
 
