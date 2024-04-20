@@ -1,4 +1,3 @@
-let count = 0;
 let cooldown = false;
 
 
@@ -17,8 +16,6 @@ async function increaseSigmaCounter() {
         let audio = document.getElementById("sigmaSound");
         audio.currentTime = 0;
         audio.play();
-        count++;
-        document.getElementById("count").textContent = count;
         cooldown = true;
         setTimeout(() => {
             cooldown = false;
