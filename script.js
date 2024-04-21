@@ -10,7 +10,7 @@ async function getSigmaCounter() {
 // hack to make the shit load instantly
 getSigmaCounter();
 
-setInterval(getSigmaCounter, 2500);
+setInterval(getSigmaCounter, 500);
 
 async function increaseSigmaCounter() {
     if (!cooldown) {
