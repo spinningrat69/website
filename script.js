@@ -5,9 +5,10 @@ async function getSigmaCounter() {
   const response = await fetch("https://api.down-syndro.me:42069/api/count");
   const text = await response.text();
   document.getElementById("count").textContent = text;
-
-  
 }
+
+// hack to make the shit load instantly
+getSigmaCounter();
 
 setInterval(getSigmaCounter, 2500);
 
